@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Documento</title>
+</head>
+<style>
+form{background:cornsilk; padding: 5px; width: 380px; border: 1px solid purple;}
+input{margin-top: 2px; color:red;}
+</style>
+<body>
+    
+<form action="#"> <!--# para enviar o arquivo para ele mesmo-->
+<label for="nome">Nome:</label> <br>
+<input required autofocus placeholder="Digitar o nome" id="nome" value="Guilherme" type="text" name="name" size="20px"><br>
+<label for="end">End:</label><br>
+<input required autofocus placeholder="Digite o end" type="text" name="end" size="50px" maxlength="10">
+<label for="senha">Senha:</label> <br>
+<input required placeholder="Digitar a senha" id="senha" type="password" name="senha" size="20px"><br>
+<br>
+<label>Qual a sua fruta preferida:</label><br>
+<input id="laranja" type="checkbox" name="laranja" value="laranja">
+<label for="laranja">Laranja</label><br>
+<input id="pera" type="checkbox" name="pera" value="pera" checked>
+<label for="pera">Pêra</label><br>
+Qual o seu time?<br>
+<input type="radio" name="time" value="flu">Fluminence
+<input type="radio" name="time" value="fla">Flamengo<br>
+
+<br>
+<input type="submit" value="Enviadado">
+<input type="reset" value="Limpar">
+<input type="button" value="Clicar" onclick="alert('Hello Wolrd')">
+Cor: <br>
+<input type="color">
+Arquivo<br>
+<input type="file"><br>
+Número:<input value="24" type="number" min="10" max="50"><br>
+Número:<input type="range" min="1" max="100"><br>
+Informe a data: <input type="date"><br>
+Data entre: <input type="date" min="2019-01-01" max="2019-12-31"><br>
+Informe o mês: <input type="month" min="2019-01-01" max="2019-2-31"><br>
+
+Observação:<br>
+<textarea name="obs" rows="3" cols="50" placeholder=" Digite aqui mané"></textarea>
+<br>
+
+Selecione a cidade:<br>
+<select type="cidade">
+    <option value="jaragua">Jaragua do sul</option>
+    <option value="blumenau">Blumenau</option>
+    <option value="xerea">Xereda</option>
+</select><br>
+
+Selecione a cidade:<br>
+<select type="cidade" size="3" multiple>
+    <option value="jaragua">Jaragua do sul</option>
+    <option value="blumenau">Blumenau</option>
+    <option value="xerea">Xereda</option>
+</select><br>
+
+</form>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+Num1: 0 <input type="range" id="a" name="a" value="50">100<br>
+Num1: <input type="number" id="b" name="b" value="50">50<br>
+Resultado: <output name="x" for="a b"></output><br><br>
+<input type="submit">
+</form>
+
+
+
+
+</body>
+</html>
