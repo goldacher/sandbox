@@ -1,0 +1,16 @@
+#idColuna{
+    background-color: blue;
+    color: white;
+    font-size: 12px;
+}
+.tabColor tr:nth-child(odd) {
+background-color:green;
+color: red;
+}  
+.tabColor tr:nth-child(even) {
+background-color:yellow;
+color: white;
+}
+td{
+    text-align: center;
+}
